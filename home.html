@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    </head>
+    
+    <header class="header">
+      <a href="#" class="logo">HOUSE PAINT</a>
+      <nav class="nav-items">
+        <a href="home.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+    <main>
+      <div class="intro">
+        <h1>HOME DESIGN PLANNER</h1>
+        <p> INNOVATIVE DESIGNS FOR YOR PERFECT HOME</p>
+
+        <a href="cta" class="chat-button">Connect with Us</a>
+      </div>
+      <div class="feature-description">
+        <div class="des">
+          <i class="fas fa-inspiring"></i>
+          <p class="des-heading">Inspiring & Empowering</p>
+          <p class="des-text">We believe that every home should be as unique as its owner. Our advanced interior design planner allows you to experiment with floor plans, furniture, colors, and finishes to create your dream space. And when you're ready to make it happen, our team of trusted constructors can step in to help bring your design vision to life. Whether you need help with structural changes or fine-tuning your decor, we’re here to assist in every phase—from planning to construction. Start designing today, and let us help you create a home that’s truly yours!</p>
+        </div>
+        <div class="des">
+          <i class="fas fa-vision"></i>
+          <p class="des-heading">Vision Meets Reality</p>
+          <p class="des-text">we make it easy to design the home you've always dreamed of—right from the comfort of your screen. Our  interior design planner lets you experiment with floor plans, furnishings, and décor to create a space that suits your unique style. Once you have the perfect design, our trusted network of professional constructors can help bring it to life, ensuring your vision is built with quality and precision.</p>
+        </div>
+        <div class="des">
+          <i class="fas fa-design"></i>
+          <p class="des-heading">Design, Create, Build</p>
+          <p class="des-text">Your dream home is just a few clicks away. Use our intuitive interior design planner to explore endless design possibilities, including floor plans, color schemes, and furniture arrangements. When you're ready to bring your vision to life, our professional construction team is here to help with everything from structural changes to final touches. We offer you a seamless process from design concept to completed build—giving you the confidence that your dream space is in capable hands.</p>
+        </div>
+      </div>
+      <div>
+        <div class="agent">
+            <img src="https://media.architecturaldigest.com/photos/5e543e29eb9e7a0008a1eb55/master/pass/Interior-design-jobs-salaries-AD-PRO-19_04_08_Mark_Cunningham_0511.jpg" alt="Interior Design Image 1">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.ExOKYOlMByRw3LeKI8SWiwHaE8&pid=Api&P=0&h=220" alt="Interior Design Image 2">
+            <img src="https://fiveinteriors.co.uk/wp-content/uploads/2017/10/estate-agent-design-brinleys-01.jpg" alt="Interior Design Image 3">
+        </div>
+    </div>
+    
+    </main>
+    <div class="line"></div>
+      <div class="Testimonial">
+        <div class="Testimonial-text">
+          <h2>TESTIMONIAL</h2>
+         
+          <p>Why Our Clients Love Working With Us<br>
+  
+             We’re dedicated to making every project a seamless, enjoyable experience.<br>Our clients love the personal touch we bring to each design, transforming their visions into spaces they truly love.<br> Discover what they have to say about their journey with us.
+            
+            </p>
+            <div class="client-review">
+        <div class="arrow-wrapper">
+          <div id="reviewWrap" class="review-wrap">
+            <div id="imgBox"></div>
+            <div id="name"></div>
+            <div id="country"></div>
+            <div id="description"></div>
+          </div>
+          <div class="left-arrow-wrap">
+            <div class="arrow"></div>
+          </div>
+          <div class="right-arrow-wrap">
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+      <script>
+        const reviewWrap = document.getElementById("reviewWrap");
+        const leftArrow = document.querySelector(".left-arrow-wrap .arrow");
+        const rightArrow = document.querySelector(".right-arrow-wrap .arrow");
+        const imgBox = document.getElementById("imgBox");
+        const name = document.getElementById("name");
+        const country = document.getElementById("country");
+        const description = document.getElementById("description");
+    
+        let people = [{
+        
+            photo: "url('https://www.bestratedincanada.com/wp-content/uploads/William-Shatner.jpg')",
+            name: "William Shatner",
+            country: "Europe",
+            description: "We’re so grateful for the hardworking team who helped us build our dream home. The designers listened to all our ideas, and the workers brought them to life with precision and passion. They paid attention to even the smallest details and made sure everything was perfect. Our home feels unique, comfortable, and beautifully made. Thank you to everyone who made it happen"
+          },
+          {
+            photo: 'url("https://imgix.ranker.com/user_node_img/1551/31000870/original/31000870-photo-u1974903819?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300")',
+            name: "Ana de Armas",
+            country: "Spanish",
+            description: "The construction crew was equally impressive. They were punctual, respectful of my space, and kept the work area clean and organized each day. I could see the quality and craftsmanship in every aspect of their work, which made me feel confident throughout the entire process. They even managed to finish slightly ahead of schedule, which was a pleasant surprise!:"
+          },
+          {
+            photo: "url('https://imgix.ranker.com/user_node_img/24/467933/original/467933-photo-u-357197709?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300')",
+            name: "Anna Paquin",
+            country: "Canada",
+            description: "After months of planning, this team brought my vision to life, and I’m blown away by the results! My home looks brand new, with stunning design touches that make it feel modern yet cozy. They took my ideas and improved them in ways I hadn’t even considered, making every room more functional and visually appealing. The builders were friendly, careful, and always kept the place tidy. I can’t thank them enough for making this renovation such a positive experience!"
+          },
+          {
+            photo: "url('https://imgix.ranker.com/user_node_img/113/2258001/original/2258001-photo-u1678657098?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300')",
+            name: "Tom Hanks",
+            country: "America",
+            description: "I’m so impressed by the quality and professionalism of this team. From day one, they made me feel comfortable and involved in every decision. The designer had a keen eye for balancing aesthetics and practicality, and the construction team’s attention to detail was incredible. They added custom shelves, redesigned my kitchen layout, and even added some clever storage solutions I hadn’t thought of. Now my home feels more open, organized, and stylish than ever. Truly top-notch work!"
+          },
+          {
+            photo: "url('https://imgix.ranker.com/user_node_img/43/843540/original/843540-photo-u-1372706150?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300')",
+            name: "Denzel Washington",
+            country: "New York",
+            description: "I recently hired this team to remodel my kitchen and add some custom design elements, and the outcome is absolutely stunning! The designer helped me choose materials and colors that fit my style, and the contractor ensured every detail was executed perfectly. The workers were reliable, friendly, and left everything clean at the end of each day. Now, my kitchen is not only beautiful but also so much more functional. I couldn’t be happier!"
+          },
+      
+        ];
+    
+
+        imgBox.style.backgroundImage = people[0].photo;
+        name.innerText = people[0].name;
+        country.innerText = people[0].country;
+        description.innerText = people[0].description;
+        let currentPerson = 0;
+
+        function slide(side, personNumber) {
+          let reviewWrapWidth = reviewWrap.offsetWidth + "px";
+          let descriptionHeight = description.offsetHeight + "px";
+        
+          let side1symbol = side === "left" ? "" : "-";
+          let side2symbol = side === "left" ? "-" : "";
+    
+          setTimeout(() => {
+            imgBox.style.backgroundImage = people[personNumber].photo;
+          }, 0);
+          setTimeout(() => {
+            description.style.height = descriptionHeight;
+          }, 100);
+          setTimeout(() => {
+            name.innerText = people[personNumber].name;
+          }, 200);
+          setTimeout(() => {
+            country.innerText = people[personNumber].country;
+          }, 300);
+          setTimeout(() => {
+            description.innerText = people[personNumber].description;
+          }, 400);
+        }
+    
+        function setNextCardLeft() {
+          if (currentPerson === 3) {
+            currentPerson = 0;
+            slide("left", currentPerson);
+          } else {
+            currentPerson++;
+          }
+    
+          slide("left", currentPerson);
+        }
+    
+        function setNextCardRight() {
+          if (currentPerson === 0) {
+            currentPerson = 3;
+            slide("right", currentPerson);
+          } else {
+            currentPerson--;
+          }
+    
+          slide("right", currentPerson);
+        }
+    
+        leftArrow.addEventListener("click", setNextCardLeft);
+        rightArrow.addEventListener("click", setNextCardRight);
+      </script>
+
+<main>
+
+  <section class="contact-us">
+      <h2>Contact Us</h2>
+      <p>Fill out the form below, and we'll get back to you as soon as possible!</p>
+      <form action="mailto:your-email@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Your Full Name">
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Your Email Address">
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" required placeholder="Your Message..."></textarea>
+
+          <button type="submit">Send Message</button>
+      </form>
+  </section>
+
+
+  <section class="social-media">
+    <h2>Follow Us</h2>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" class="social-icon">
+            <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon">
+            <i class="fab fa-twitter"></i> Twitter
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+     
+      </div>
+  </section>
+
+</main>
+  </body>
+</head>
